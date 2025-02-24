@@ -1,0 +1,30 @@
+ /* Hide the scrollbar while keeping the content scrollable */
+ /* developed by Tawhidur Rahman Dear, https://www.tawhidurrahmandear.com */
+ /* Live Preview available at https://www.devilhunter.net/2025/02/hide-scrollbar-while-keeping-content-scrollable.html */
+
+
+
+/* Styles */
+ 
+/* ===== Fully Hidden Scrollbar (Still Scrollable) ===== */
+/* Firefox */
+* {
+  scrollbar-width: none; /* Hides scrollbar but keeps scrolling functional */
+  scrollbar-color: transparent transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px; /* Completely removes scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; /* No track background */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Fully hides scrollbar thumb */
+  border-radius: 0px; /* No unnecessary styling */
+}
+
+/* ===== Fully Hidden Scrollbar (Still Scrollable) ===== */
